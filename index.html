@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./logo/icons8-eye-in-speech-bubble-48.png"
+      type="image/x-icon"
+    />
+    <title>Interactive rating component main</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- normalize css-->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!--custom css-->
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="rating-card" id="main-card">
+        <img src="./images/icon-star.svg" class="star" />
+        <h2 class="question">How do we do ?</h2>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="buttons">
+          <input type="button" value="1" class="btn-rating" name="rating" />
+          <input type="button" value="2" class="btn-rating" name="rating" />
+          <input type="button" value="3" class="btn-rating" name="rating" />
+          <input type="button" value="4" class="btn-rating" name="rating" />
+          <input type="button" value="5" class="btn-rating" name="rating" />
+        </div>
+        <button class="btn-submit" id="btn-submit">Submit</button>
+      </div>
+      <div class="thankyou-card hidden" id="thankyou-card">
+        <img src="./images/illustration-thank-you.svg" class="thankyou-img" />
+        <p class="select" id="select">You select 4 out of 5</p>
+        <h2 class="thankyou">Thank you!</h2>
+        <p class="rating">
+          We appreciate you talking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch
+        </p>
+        <button class="btn-ok" id="btn-ok">OK</button>
+      </div>
+    </main>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
